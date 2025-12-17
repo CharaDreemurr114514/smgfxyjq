@@ -64,20 +64,22 @@
 
         /* 链接容器：半透明深色背景，保证文字可见 */
         .significant {
-            height: 100px;
+            height: 800px;
             width: 100%;
             background-color: #2facf0cc;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             margin-top: 20px;
-            /* 保证容器在背景上方 */
             position: relative;
             z-index: 1;
         }
 
-        /* 移除原来的bg图片（改用body全局背景） */
         .mainbotton {
+            float: left;
+            display: block;
+            margin: 5px 0;
             font-size: 30px;
             color: white;
             text-decoration: none;
@@ -95,9 +97,9 @@
         <a class="lianjie" href="https://www.fjbu.edu.cn/">官网</a>
     </div>
 
-    <!-- 移除原来的<img class="bg">，改用body全局背景 -->
     <div class="significant">
         <a class="mainbotton" href="https://www.baidu.com/">学业有关</a>
+        <a class="mainbotton" href="https://charadreemurr114514.github.io/Holy-Cup/sbzz.html">活动有关</a>
     </div>
 </body>
 </html>
