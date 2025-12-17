@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>福建商学院25物联网工程1班官网</title>
+    <style>
+        /* 全局重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 核心：设置全局背景（最底层） */
+        body {
+            /* 背景图片路径（替换为你的图片地址） */
+            background-image: url("lgmm.jpg");
+            /* 背景覆盖整个页面 */
+            background-size: cover;
+            /* 背景居中显示 */
+            background-position: center center;
+            /* 背景固定（滚动页面时不动，可选） */
+            background-attachment: fixed;
+            /* 背景不重复 */
+            background-repeat: no-repeat;
+            /* 最小高度占满屏幕，避免内容少的时候背景不全 */
+            min-height: 100vh;
+            /* 让body作为定位容器，子元素z-index生效 */
+            position: relative;
+        }
+
+        /* 标题栏：加半透明背景，既不遮挡全局背景，又能看清文字 */
+        .title {
+            height: 80px;
+            /* 半透明蓝色背景（最后一位0.8是透明度） */
+            background-color: rgba(0, 0, 255, 0.8);
+            display: flex;
+            align-items: center;
+            width: 100%;
+            /* 保证标题栏在背景上方 */
+            position: relative;
+            z-index: 1;
+        }
+
+        .main_theme {
+            font-size: 30px;
+            color: white;
+            margin: 0 20px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+
+        .lianjie {
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        /* 链接容器：半透明深色背景，保证文字可见 */
+        .significant {
+            height: 100px;
+            width: 100%;
+            background-color: #2facf0cc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            /* 保证容器在背景上方 */
+            position: relative;
+            z-index: 1;
+        }
+
+        /* 移除原来的bg图片（改用body全局背景） */
+        .mainbotton {
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .lianjie:hover, .mainbotton:hover {
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <img class="logo" src="logo.jpg" alt="官网图片">
+        <h2 class="main_theme">25级物联网工程1班</h2>
+        <a class="lianjie" href="https://www.fjbu.edu.cn/">官网</a>
+    </div>
+
+    <!-- 移除原来的<img class="bg">，改用body全局背景 -->
+    <div class="significant">
+        <a class="mainbotton" href="https://www.baidu.com/">学业有关</a>
+    </div>
+</body>
+</html>
